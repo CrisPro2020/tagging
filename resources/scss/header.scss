@@ -1,0 +1,306 @@
+/*=================
+    * HEADER *
+==================*/
+.header {
+    @apply relative bg-primary py-3.5;
+
+    @include breakpoint-down(lg) {
+        @apply py-5;
+    }
+
+    nav {
+        @apply relative;
+    }
+
+    /*
+        HEADER PARA MOSTRAR SOLO EN -> DESKTOP
+    */
+    &-desktop {
+
+        @apply container mx-auto flex justify-between;
+
+        @include breakpoint-down(lg) {
+            @apply hidden;
+        }
+
+        .logo {
+            @apply relative w-1/4 flex items-center;
+
+            &-link {
+                @apply w-full;
+            }
+        }
+
+        .enlaces {
+            @apply relative w-3/4 flex items-center justify-end;
+
+            .menu {
+                @apply relative;
+
+                &-link {
+                    @apply relative inline-block py-2 text-gray-300 mr-8;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        @apply text-gray-100;
+                    }
+
+                    @include breakpoint-down(xl) {
+                        @apply mr-4 py-2;
+                    }
+
+                    &::after {
+                        @apply absolute bottom-0 left-0 block bg-amarillo;
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        transition: all 0.3s ease;
+                    }
+        
+                    &:hover::after {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .contacto {
+                @apply relative;
+
+                &-link {
+                    @apply inline-block text-primary bg-secondary transition-colors rounded-full py-3.5 px-10 font-medium;
+                    
+                    &:hover {
+                        @apply bg-amarillo-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    /*
+        HEADER PARA MOSTRAR SOLO EN -> MOBILE
+    */
+    &-mobile {
+        @apply hidden container mx-auto items-center;
+
+        @include breakpoint-down(lg) {
+            @apply flex;
+        }
+
+        .logo {
+            @apply relative flex items-center w-1/2;
+
+            &-link {
+                @apply w-full;
+            }
+        }
+
+        .menu {
+            @apply relative flex justify-end items-center w-1/2;
+
+            &-toggle {
+                @apply relative inline-flex flex-col items-center justify-center rounded-sm cursor-pointer;
+                width: 28px;
+                height: 30px;
+
+                i {
+                    font-size: 26px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+/*=================
+    * FIN - HEADER *
+==================*/
+
+/*
+    * ESTILOS PARA EL LOGO * 
+*/
+
+.logo {
+    img {
+        max-width: 150px;
+
+        @include breakpoint-down(lg) {
+            max-width: 120px;
+        }
+    }
+}
+
+/*
+    * FIN - ESTILOS PARA EL LOGO * 
+*/
+
+/*=================
+    * HEADER TOP *
+==================*/
+.header-top {
+    @apply fixed z-40 w-full bg-morado-dark py-3;
+    top: -68px;
+    transition: all 0.3s ease;
+
+    &.show {
+        @apply top-0;
+    }
+
+    @include breakpoint-down(lg) {
+        @apply py-4;
+    }
+
+    nav {
+        @apply relative;
+    }
+    /*
+        HEADER PARA MOSTRAR SOLO EN -> DESKTOP
+    */
+    &-desktop {
+        @apply container mx-auto flex justify-between;
+
+        @include breakpoint-down(lg) {
+            @apply hidden;
+        }
+
+        .logo {
+            @apply relative w-1/4 flex items-center;
+
+            &-link {
+                @apply w-full;
+            }
+        }
+
+        .enlaces {
+            @apply relative w-3/4 flex items-center justify-end;
+
+            .menu {
+                @apply relative;
+
+                &-link {
+                    @apply relative inline-block py-2 text-gray-300 mr-8;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        @apply text-gray-100;
+                    }
+
+                    @include breakpoint-down(xl) {
+                        @apply mr-4 py-2;
+                    }
+
+                    &::after {
+                        @apply absolute bottom-0 left-0 block bg-amarillo;
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        transition: all 0.3s ease;
+                    }
+        
+                    &:hover::after {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .contacto {
+                @apply relative;
+
+                &-link {
+                    @apply inline-block text-primary bg-secondary transition-colors rounded-full py-2.5 px-10 font-semibold;
+                    
+                    &:hover {
+                        @apply bg-amarillo-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    /*
+        HEADER PARA MOSTRAR SOLO EN -> MOBILE
+    */
+    &-mobile {
+        @apply hidden container mx-auto items-center;
+
+        @include breakpoint-down(lg) {
+            @apply flex;
+        }
+
+        .logo {
+            @apply relative flex items-center w-1/2;
+
+            &-link {
+                @apply w-full;
+            }
+        }
+
+        .menu {
+            @apply relative flex justify-end items-center w-1/2;
+
+            &-toggle {
+                @apply relative inline-flex flex-col items-center justify-center rounded-sm cursor-pointer;
+                width: 28px;
+                height: 30px;
+
+                i {
+                    font-size: 26px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+/*=================
+    * FIN - HEADER TOP *
+==================*/
+
+.menu-fondo-popup {
+    @apply fixed z-50 inset-0 transition-all w-full h-full opacity-0 invisible hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    @include breakpoint-down(lg) {
+        @apply block;
+    }
+
+    &.show {
+        @apply opacity-100 visible;
+    }
+
+    .menu-popup {
+        @apply max-w-xs w-full fixed top-1/2 left-1/2 bg-morado-light py-6 px-5 rounded-md;
+        transform: translate(-50%, -50%);
+
+        .menu {
+            @apply relative mb-4;
+
+            &-link {
+                @apply relative block transition-colors text-gray-100 text-center py-2;
+            }
+        }
+
+        .contacto {
+            @apply relative flex justify-center;
+
+            &-link {
+                @apply inline-block text-primary font-medium bg-secondary transition-colors rounded-full py-3.5 px-10;
+
+                &:hover {
+                    @apply bg-amarillo-dark;
+                }
+            }
+        }
+
+        .close {
+            @apply absolute transition-all p-1 rounded opacity-70 cursor-pointer top-3 right-2;
+
+            i {
+                font-size: 26px;
+                color: white;
+            }
+
+            &:hover {
+                @apply opacity-100;
+            }
+        }
+    }
+}

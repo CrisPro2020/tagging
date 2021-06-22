@@ -1,0 +1,35 @@
+/*=================
+    * BREAKPOINTS *
+==================*/
+
+@media (min-width: 64em) {
+    // Styles go here
+}
+
+$breakpoints-up: (
+    'sm': '23.4375em', // 360px
+    'md': '40em', // 640px
+    'lg': '48em', // 768px
+    'xl': '64em', // 1024px
+    '2xl': '85.375em', // 1366Px
+);
+
+$breakpoints-down: (
+    'sm': '23.4375em', // 360px
+    'md': '40em', // 640px
+    'lg': '48em', // 768px
+    'xl': '64em', // 1024px
+    '2xl': '85.375em', // 1366px
+);
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}

@@ -1,0 +1,40 @@
+/*=================
+    * COLORES Y TAMAÑOS DE FUENTE *
+==================*/
+
+:root {
+    // Fuentes
+
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Rubik', sans-serif;
+
+    // Colores
+
+    --color-morado: #36276E;
+    --color-morado-oscuro: #1D153B;
+    --color-morado-claro: #7B57FA;
+    --color-amarillo: #FCDD1E;
+    --color-amarillo-claro: #FDE96A;
+    --color-amarillo-oscuro: #E3C81B;
+    --color-negro: #2D2D2D;
+
+    // Contenedor
+    --ancho-contenedor: 1240px;
+
+    // Tamaños de fuente
+    --display-1: 70px;
+    --display-2: 50px;
+    --display-3: 36px;
+    --h1: 36px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 22px;
+    --h6: 20px;
+
+    --xl: 20px;
+    --lg: 18px;
+    --base: 16px;
+    --sm: 14px;
+    --xs: 12px;
+}
