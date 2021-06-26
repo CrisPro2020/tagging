@@ -60,6 +60,17 @@
                     &:hover::after {
                         width: 50%;
                     }
+
+                    &.active {
+                        @apply text-gray-100;
+
+                        &::after {
+                            @apply absolute bottom-0 left-0 block bg-amarillo;
+                            content: '';
+                            width: 50%;
+                            height: 2px;
+                        }
+                    }
                 }
             }
 
@@ -142,7 +153,7 @@
     transition: all 0.3s ease;
 
     &.show {
-        @apply top-0;
+        @apply top-0 shadow-2xl;
     }
 
     @include breakpoint-down(lg) {
@@ -198,6 +209,17 @@
         
                     &:hover::after {
                         width: 50%;
+                    }
+
+                    &.active {
+                        @apply text-gray-100;
+
+                        &::after {
+                            @apply absolute bottom-0 left-0 block bg-amarillo;
+                            content: '';
+                            width: 50%;
+                            height: 2px;
+                        }
                     }
                 }
             }
