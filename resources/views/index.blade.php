@@ -31,7 +31,7 @@
                     <span class="icon-rombo rombo-4 rombo-white"></span>
                 </div>
             </div>
-            <span class="adorno-1"></span>
+            {{-- <span class="adorno-1"></span> --}}
         </div>
     </section>
 
