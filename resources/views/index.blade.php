@@ -40,7 +40,7 @@
     --------------------------->
     <section class="te-sucede-esto">
         <div class="container">
-            <span class="adorno-2"></span>
+            {{-- <span class="adorno-2"></span> --}}
             <div class="info">
                 <div class="line"></div>
                 <p class="pre-title">Déjanos adivinar</p>
@@ -111,7 +111,7 @@
                 <P class="pre-title">Tanta tecnología y dudas hasta</P>
                 <p class="subtitle">Ya no sabes ni por donde empezar...</p>
             </div>
-            <span class="adorno-2"></span>
+            {{-- <span class="adorno-2"></span> --}}
         </div>
     </section>
 
@@ -182,7 +182,7 @@
     --------------------------->
     <section class="encantados">
         <div class="container">
-            <span class="adorno-2 variante"></span>
+            {{-- <span class="adorno-2 variante"></span> --}}
             <div class="img">
                 <span class="absolute icon-rombo rombo-1 rombo-yellow"></span>
                 <span class="absolute icon-rombo rombo-2 rombo-white"></span>
@@ -225,7 +225,7 @@
     --------------------------->
     <section class="testimonios">
         <div class="container">
-            <span class="adorno-2"></span>
+            {{-- <span class="adorno-2"></span> --}}
             <div class="line"></div>
             <p class="pre-title">Mira lo que nuestros clientes</p>
             <p class="subtitle">Dicen de nosotros</p>
@@ -278,7 +278,7 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <span class="adorno-2 variante"></span>
+            {{-- <span class="adorno-2 variante"></span> --}}
         </div>
     </section>
 
