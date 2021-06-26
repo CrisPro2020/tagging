@@ -7,19 +7,19 @@
 }
 
 $breakpoints-up: (
-    'sm': '23.4375em', // 360px
+    'sm': '30em', // 480px
     'md': '40em', // 640px
     'lg': '48em', // 768px
     'xl': '64em', // 1024px
-    '2xl': '85.375em', // 1366Px
+    'xxl': '85.375em', // 1366Px
 );
 
 $breakpoints-down: (
-    'sm': '23.4375em', // 360px
+    'sm': '30em', // 480px
     'md': '40em', // 640px
     'lg': '48em', // 768px
     'xl': '64em', // 1024px
-    '2xl': '85.375em', // 1366px
+    'xxl': '85.375em', // 1366px
 );
 
 @mixin breakpoint-up($size) {
