@@ -3802,11 +3802,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
-__webpack_require__(/*! ./main.js */ "./resources/js/main.js");
-
 __webpack_require__(/*! ./swiper.js */ "./resources/js/swiper.js");
 
 __webpack_require__(/*! ./cursor.js */ "./resources/js/cursor.js");
+
+__webpack_require__(/*! ./main.js */ "./resources/js/main.js");
 
 /***/ }),
 
