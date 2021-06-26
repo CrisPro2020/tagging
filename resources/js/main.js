@@ -36,4 +36,33 @@ function headerFloatShow() {
 
 }
 
-window.addEventListener("scroll", headerFloatShow)
+window.addEventListener("scroll", headerFloatShow);
+
+/**
+ * Hacer scroll para volver arriba
+ */
+
+const scrollTopBtn = document.querySelector("#scroll-top");
+
+function ShowScrollTop() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+}
+
+scrollTopBtn.addEventListener("click", ShowScrollTop);
+
+// Mostrar scroll top en la ventana
+
+function scrollTop() {
+    // When the scroll is higher than 560 viewport height, add the scroll class to thea tag with the scroll-top class
+    if (this.scrollY >= 560) {
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.classList.remove("show");
+    }
+}
+
+window.addEventListener("scroll", scrollTop);
