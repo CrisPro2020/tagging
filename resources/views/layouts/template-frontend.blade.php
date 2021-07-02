@@ -25,9 +25,9 @@
 </head>
 <body class="bg-morado">
 
-    {{-- <div class="scroll-top" id="scroll-top">
+    <div class="scroll-top" id="scroll-top">
         <i class='bx bx-chevron-up'></i>
-    </div> --}}
+    </div>
     
     <!--------------------------
         * HEADER *
@@ -128,7 +128,7 @@
     </div>
 
 
-    @yield('content')
+    {{-- @yield('content') --}}
 
     <!--------------------------
         * FOOTER *
