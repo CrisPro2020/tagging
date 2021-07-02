@@ -38,5 +38,43 @@
     <!--------------------------
         * TE SUCEDE ESTO *
     --------------------------->
-    
+    <section class="te-sucede-esto">
+        <div class="container">
+            {{-- <span class="adorno-2"></span> --}}
+            <div class="info">
+                <div class="line"></div>
+                <p class="pre-title">Déjanos adivinar</p>
+                <p class="subtitle">¿Te sucede esto?</p>
+            </div>
+            <div class="cards">
+                <div class="card-flotante">
+                    <div class="card">
+                        <span class="card-rombo"></span>
+                        <div class="card-content">
+                            <object class="icon" type="image/svg+xml" data="{{ asset('img/icons-svg/time.svg') }}"></object>
+                            <p class="description">Quieres pasar tu negocio al mundo digital, pero no tienes el tiempo necesario para dedicarte a ello</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flotante">
+                    <div class="card">
+                        <span class="card-rombo"></span>
+                        <div class="card-content">
+                            <object class="icon" type="image/svg+xml" data="{{ asset('img/icons-svg/question.svg') }}"></object>
+                            <p class="description">Te cuesta entender como funciona el mundo de las redes sociales para poder ofrecer tus productos o servicios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flotante">
+                    <div class="card">
+                        <span class="card-rombo"></span>
+                        <div class="card-content">
+                            <object class="icon" type="image/svg+xml" data="{{ asset('img/icons-svg/idea.svg') }}"></object>
+                            <p class="description">Quieres emprender tu negocio mediante las redes sociales o la web y necesitas hacerlo correctamente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
