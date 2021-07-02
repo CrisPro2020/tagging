@@ -128,7 +128,7 @@
     </div>
 
 
-    {{-- @yield('content') --}}
+    @yield('content')
 
     <!--------------------------
         * FOOTER *
