@@ -87,9 +87,9 @@
                 <div class="imgs">
                     <span class="icon-rombo rombo-1 rombo-yellow"></span>
                     <span class="icon-rombo rombo-2 rombo-white"></span>
-                    {{-- <span class="icon-social icon-1">
+                    <span class="icon-social icon-1">
                         <object type="image/svg+xml" data="{{ asset('img/icons-svg/medios-de-comunicacion.svg')}}"></object>
-                    </span> --}}
+                    </span>
                 </div>
                 <div class="content">
                     <span class="line-left"></span>
@@ -99,9 +99,9 @@
                     </div>
                 </div>
                 <div class="imgs">
-                    {{-- <span class="icon-social icon-2">
+                    <span class="icon-social icon-2">
                         <object type="image/svg+xml" data="{{ asset('img/icons-svg/network.svg') }}"></object>
-                    </span> --}}
+                    </span>
                     <span class="icon-rombo rombo-3 rombo-white"></span>
                     <span class="icon-rombo rombo-4 rombo-yellow"></span>
                 </div>
