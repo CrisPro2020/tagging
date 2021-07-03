@@ -92,7 +92,7 @@
                     </span>
                 </div>
                 <div class="content">
-                    <span class="line-left"></span>
+                    {{-- <span class="line-left"></span> --}}
                     <div class="content-info">
                         <p class="description">Ves vídeos, lees, escuchas podcats donde te dicen que debes tener tu negocio en el mundo digital tanto en las redes sociales como en la web porque esto te ayuda a vender más a clientes verdaderamente potenciales.</p>
                         <p class="description">Todo esto puede ser confuso para ti y luego de...</p>
