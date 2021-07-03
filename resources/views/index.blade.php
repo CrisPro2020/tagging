@@ -85,8 +85,8 @@
         <div class="container">
             <div class="info-1">
                 <div class="imgs">
-                    <span class="icon-rombo rombo-1 rombo-yellow"></span>
-                    <span class="icon-rombo rombo-2 rombo-white"></span>
+                    {{-- <span class="icon-rombo rombo-1 rombo-yellow"></span> --}}
+                    {{-- <span class="icon-rombo rombo-2 rombo-white"></span> --}}
                     {{-- <span class="icon-social icon-1">
                         <object type="image/svg+xml" data="{{ asset('img/icons-svg/medios-de-comunicacion.svg')}}"></object>
                     </span> --}}
@@ -98,17 +98,17 @@
                         <p class="description">Todo esto puede ser confuso para ti y luego de...</p>
                     </div>
                 </div>
-                {{-- <div class="imgs">
-                    <span class="icon-social icon-2">
+                <div class="imgs">
+                    {{-- <span class="icon-social icon-2">
                         <object type="image/svg+xml" data="{{ asset('img/icons-svg/network.svg') }}"></object>
                     </span> --}}
-                    <span class="icon-rombo rombo-3 rombo-white"></span>
-                    <span class="icon-rombo rombo-4 rombo-yellow"></span>
+                    {{-- <span class="icon-rombo rombo-3 rombo-white"></span> --}}
+                    {{-- <span class="icon-rombo rombo-4 rombo-yellow"></span> --}}
                 </div>
             </div>
             <div class="info-2">
                 <div class="line"></div>
-                <P class="pre-title">Tanta tecnología y dudas hasta</P>
+                <p class="pre-title">Tanta tecnología y dudas hasta</p>
                 <p class="subtitle">Ya no sabes ni por donde empezar...</p>
             </div>
             {{-- <span class="adorno-2"></span> --}}
