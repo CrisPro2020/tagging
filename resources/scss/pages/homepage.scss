@@ -704,10 +704,7 @@
                     @apply absolute bg-white flex justify-center items-center;
                     border-radius: 10px;;
                     transform: rotate(45deg);
-    
-                    @include breakpoint-down(sm) {
-                        @apply relative;
-                    }
+
     
                     object {
                         transform: rotate(-45deg);
@@ -724,8 +721,8 @@
                         }
     
                         @include breakpoint-down(sm) {
-                            top: auto;
-                            left: 20px;
+                            top: -30px;
+                            left: 60px;
                         }
                     }
     
