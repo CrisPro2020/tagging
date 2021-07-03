@@ -737,6 +737,7 @@
                         }
     
                         @include breakpoint-down(sm) {
+                            @apply hidden;
                             bottom: auto;
                             right: auto;
                             left: 200px;
