@@ -55,7 +55,7 @@
         </nav>
         <nav class="header-mobile">
             <div class="logo">
-                <a href="#" class="logo-link">
+                <a href="{{ route('inicio') }}" class="logo-link">
                     <img src="{{ asset('img/logo-tagging.svg') }}" alt="Tagging">
                 </a>
             </div>
@@ -93,7 +93,7 @@
         </nav>
         <nav class="header-top-mobile">
             <div class="logo">
-                <a href="#" class="logo-link w-full">
+                <a href="{{ route('inicio') }}" class="logo-link w-full">
                     <img src="{{ asset('img/logo-tagging.svg') }}" alt="Tagging">
                 </a>
             </div>
