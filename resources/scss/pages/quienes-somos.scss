@@ -281,19 +281,75 @@
         }
 
         .info-1 {
-            @apply w-1/2 flex items-center;
+            @apply relative w-1/2 flex items-center;
 
             @include breakpoint-down(lg) {
-                @apply w-full text-center mb-16;
+                @apply w-full text-center pb-28;
             }
 
             .content {
                 @apply w-full;
             }
+
+            .rombo-1 {
+                width: 40px;
+                height: 40px;
+                top: -60px;
+                left: 60px;
+
+                @include breakpoint-down(lg) {
+                    top: -80px;
+                }
+
+                @include breakpoint-down(sm) {
+                    left: 20px;
+                }
+            }
+
+            .rombo-2 {
+                width: 20px;
+                height: 20px;
+                top: 50px;
+                right: 100px;
+
+                @include breakpoint-down(lg) {
+                    top: -130px;
+                }
+            }
+
+            .rombo-3 {
+                width: 20px;
+                height: 20px;
+                bottom: 80px;
+                right: 180px;
+
+                @include breakpoint-down(lg) {
+                    bottom: 0;
+                }
+
+                @include breakpoint-down(sm) {
+                    right: 40px;
+                }
+            }
+
+            .rombo-4 {
+                width: 30px;
+                height: 30px;
+                bottom: 0;
+                left: 160px;
+
+                @include breakpoint-down(lg) {
+                    bottom: 50px;
+                }
+
+                @include breakpoint-down(sm) {
+                    left: 50px;
+                }
+            }
         }
 
         .info-2 {
-            @apply w-1/2 flex items-center;
+            @apply relative w-1/2 flex items-center;
 
             @include breakpoint-down(lg) {
                 @apply w-full;
@@ -388,6 +444,135 @@
             .description {
                 @apply text-white;
             }
+        }
+    }
+}
+
+/*=================
+    * CONOCE AL EQUIPO *
+==================*/
+.conoce-al-equipo {
+    @apply relative;
+    padding-top: 80px;
+    padding-bottom: 140px;
+
+    .pre-title,
+    .subtitle {
+        @apply text-center;
+    }
+
+    .miembros {
+        @apply relative;
+        padding-top: 120px;
+
+        .miembros-container {
+            @apply relative;
+
+            &:first-child {
+                @apply flex justify-center;
+            }
+
+            &:last-child {
+                @apply flex justify-between;
+
+                @include breakpoint-down(xl) {
+                    @apply justify-around;
+                }
+
+                @include breakpoint-down(lg) {
+                    @apply flex-wrap;
+                }
+
+                .card-team {
+
+                    &:nth-child(1) {
+                        top: -180px;
+
+                        @include breakpoint-down(lg) {
+                            top: initial;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 100px;
+
+                        @include breakpoint-down(lg) {
+                            margin-top: 0;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        top: -70px;
+
+                        @include breakpoint-down(lg) {
+                            top: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .card-team {
+        @apply relative text-center;
+        max-width: 300px;
+
+        @include breakpoint-down(xl) {
+            max-width: 240px;
+        }
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 60px;     
+        }
+
+        .card-img {
+            @apply relative inline-block mb-5;
+
+            &::before {
+                content: '';
+                @apply absolute;
+                top: -20px;
+                left: -20px;
+                border-radius: 10px;
+                background-color: var(--color-morado-oscuro);
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            img {
+                @apply w-full shadow-xl;
+                border-radius: 10px;
+            }
+        }
+
+        .card-img-yellow {
+
+            &::before {
+                content: '';
+                @apply absolute;
+                top: -20px;
+                left: -20px;
+                border-radius: 10px;
+                background-color: var(--color-amarillo);
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            img {
+                @apply w-full shadow-2xl;
+                border-radius: 10px;
+            }
+        }
+
+        .name {
+            @apply text-white font-display font-semibold mb-2;
+            font-size: var(--h5);
+        }
+
+        .job {
+            @apply text-white;
         }
     }
 }
