@@ -43,7 +43,7 @@
                 <div class="menu">
                     <a href="{{ route('inicio') }}" class="menu-link {{ request()->routeIs('inicio') ? 'active' : '' }}">Inicio</a>
                     <a href="{{ route('quienes-somos') }}" class="menu-link {{ request()->routeIs('quienes-somos') ? 'active' : '' }}">Quiénes somos</a>
-                    <a href="#" class="menu-link">Servicios</a>
+                    <a href="{{ route('servicios') }}" class="menu-link {{ request()->routeIs('servicios') ? 'active' : '' }}">Servicios</a>
                     <a href="#" class="menu-link">Blog</a>
                     <a href="#" class="menu-link">Portafolio</a>
                     <a href="#" class="menu-link">Clientes</a>
@@ -81,7 +81,7 @@
                 <div class="menu">
                     <a href="{{ route('inicio') }}" class="menu-link {{ request()->routeIs('inicio') ? 'active' : '' }}">Inicio</a>
                     <a href="{{ route('quienes-somos') }}" class="menu-link {{ request()->routeIs('quienes-somos') ? 'active' : '' }}">Quiénes somos</a>
-                    <a href="#" class="menu-link">Servicios</a>
+                    <a href="{{ route('servicios') }}" class="menu-link {{ request()->routeIs('servicios') ? 'active' : '' }}">Servicios</a>
                     <a href="#" class="menu-link">Blog</a>
                     <a href="#" class="menu-link">Portafolio</a>
                     <a href="#" class="menu-link">Clientes</a>
@@ -113,7 +113,7 @@
             <div class="menu">
                 <a href="{{ route('inicio') }}" class="menu-link {{ request()->routeIs('inicio') ? 'active' : '' }}">Inicio</a>
                 <a href="{{ route('quienes-somos') }}" class="menu-link {{ request()->routeIs('quienes-somos') ? 'active' : '' }}">Quiénes somos</a>
-                <a href="#" class="menu-link">Servicios</a>
+                <a href="{{ route('servicios') }}" class="menu-link {{ request()->routeIs('servicios') ? 'active' : '' }}">Servicios</a>
                 <a href="#" class="menu-link">Blog</a>
                 <a href="#" class="menu-link">Portafolio</a>
                 <a href="#" class="menu-link">Clientes</a>
@@ -157,7 +157,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{ route('servicios') }}">
                             <i class='bx bx-chevron-right'></i></span> Servicios
                         </a>
                     </li>
