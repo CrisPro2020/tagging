@@ -124,4 +124,123 @@
             </div>
         </div>
     </section>
+
+    <!--------------------------
+        * 3. CONOCE AL EQUIPO *
+    --------------------------->
+    <section class="conoce-al-equipo hidden">
+        <div class="container">
+            <p class="pre-title">Conoce</p>
+            <p class="subtitle">Al equipo profesional</p>
+        
+            <div class="miembros">
+                <div class="miembros-container">
+                    <div class="card-team">
+                        <div class="card-img">
+                            <img src="{{ asset('img/equipo/miembro-1.jpg') }}" alt="Julio Casas">
+                        </div>
+                        <p class="name">Julio Casas</p>
+                        <p class="job">CEO</p>
+                    </div>
+                </div>
+
+                <div class="miembros-container">
+                    <div class="card-team">
+                        <div class="card-img card-img-yellow">
+                            <img src="{{ asset('img/equipo/miembro-2.jpg') }}" alt="Julio Casas">
+                        </div>
+                        <p class="name">Claudia Holguín</p>
+                        <p class="job">Community Manager</p>
+                    </div>
+                    <div class="card-team">
+                        <div class="card-img card-img-yellow">
+                            <img src="{{ asset('img/equipo/miembro-4.jpg') }}" alt="Julio Casas">
+                        </div>
+                        <p class="name">Adriana Calle</p>
+                        <p class="job">Diseñadora Gráfica</p>
+                    </div>
+                    <div class="card-team">
+                        <div class="card-img card-img-yellow">
+                            <img src="{{ asset('img/equipo/miembro-3.jpg') }}" alt="Julio Casas">
+                        </div>
+                        <p class="name">Cristian Bernal</p>
+                        <p class="job">Diseñador Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------
+        * 4. TESTIMONIOS DE CLIENTES CARRUSEL *
+    --------------------------->
+    <section class="testimonios">
+        <div class="container">
+            {{-- <span class="adorno-2"></span> --}}
+            <p class="pre-title">Mira lo que nuestros clientes</p>
+            <p class="subtitle">Comentan de nosotros</p>
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper cards">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="{{ asset('img/clientes/cliente-1.jpg') }}" alt="Moda y Empresa">
+                            </div>
+                            <div class="content">
+                                <p class="testimonio">“Trabajamos con Tagging desde hace algunos meses y estamos muy contentos con los resultados y el equipo a cargo de nuestra cuenta. Son muy creativos, siempre dispuestos a apoyarnos y en búsqueda de nuevos temas. Recomendados 100%”</p>
+                                <hr>
+                                <span class="autor">Ana García</span>
+                                <span class="job">Gerente general de Moda&Empresa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="{{ asset('img/clientes/cliente-1.jpg') }}" alt="Moda y Empresa">
+                            </div>
+                            <div class="content">
+                                <p class="testimonio">“Trabajamos con Tagging desde hace algunos meses y estamos muy contentos con los resultados y el equipo a cargo de nuestra cuenta. Son muy creativos, siempre dispuestos a apoyarnos y en búsqueda de nuevos temas. Recomendados 100%”</p>
+                                <hr>
+                                <span class="autor">Ana García</span>
+                                <span class="job">Gerente general de Moda&Empresa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="{{ asset('img/clientes/cliente-1.jpg') }}" alt="Moda y Empresa">
+                            </div>
+                            <div class="content">
+                                <p class="testimonio">“Trabajamos con Tagging desde hace algunos meses y estamos muy contentos con los resultados y el equipo a cargo de nuestra cuenta. Son muy creativos, siempre dispuestos a apoyarnos y en búsqueda de nuevos temas. Recomendados 100%”</p>
+                                <hr>
+                                <span class="autor">Ana García</span>
+                                <span class="job">Gerente general de Moda&Empresa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            {{-- <span class="adorno-2 variante"></span> --}}
+        </div>
+    </section>
+
+    <!--------------------------
+        * 5. CALL TO ACTION 2 *
+    --------------------------->
+    <section class="call-to-action-2">
+        <div class="container">
+            <p class="subtitle-2">Comienza hoy a preparar todo para tu emprendimiento digital</p>
+            <hr>
+            <p class="description">Descárgate nuestra guía gratuita de <span>“LOS 10 PASOS PARA SURGIR EN EL MUNDO DIGITAL DE MANERA EXITOSA”</span> y descubre el proceso paso a paso para emprender en este mundo tan competitivo y maravilloso.</p>
+            <a href="#" class="button">Quiero mi guía gratuita</a>
+        </div>
+    </section>
 @endsection
