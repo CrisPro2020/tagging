@@ -1,0 +1,243 @@
+/*=================
+    * PORTAFOLIO *
+==================*/
+
+/*=================
+    * BANNER *
+==================*/
+.banner-portafolio {
+    @apply flex items-center;
+    background-image: url('/img/portadas/portafolio.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 456px;
+
+    @include breakpoint-down(lg) {
+        height: 320px;
+    }
+
+    @include breakpoint-down(md) {
+        background-position-x: 40%; 
+    }
+
+    .info {
+        @apply relative;
+        max-width: 550px;
+
+        @include breakpoint-down(md) {
+            max-width: 400px;
+        }
+
+        @include breakpoint-down(sm) {
+            max-width: 270px;
+        }
+
+        .subtitle {
+            @apply font-bold;
+            line-height: 1.3;
+        }
+    }
+}
+
+/*=================
+    * FILTRO *
+==================*/
+.filtro-proyectos {
+    @apply relative;
+    padding: 80px 0;
+
+    .container {
+        @apply flex justify-center;
+
+        @include breakpoint-down(md) {
+            @apply grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+
+    .opc {
+        @apply flex items-center justify-center bg-morado-dark text-white font-semibold text-center;
+        z-index: 1;
+        margin: 0 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
+        transition:  all 0.3s ease;
+        padding: 18px 40px;
+
+        @include breakpoint-down(xl) {
+            padding: 16px 30px;
+            margin: 10px;
+        }
+
+        @include breakpoint-down(md) {
+            margin: 0;
+            padding: 16px;
+            font-size: 15px;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.25);
+        }
+
+        &:active {
+            @apply text-white;
+        }
+
+        &.active {
+            @apply bg-white text-morado-dark;
+        }
+    }
+}
+
+/*=================
+    * PROYECTOS *
+==================*/
+.proyectos {
+    @apply relative;
+    padding-bottom: 190px;
+
+    .proyectos-container {
+        @apply relative w-full opacity-0;
+        transition: opacity 0.5s linear 1s;
+
+        &.imagenes-cargadas {
+            @apply opacity-100;
+        }
+
+        .item {
+            @apply absolute block;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+
+            @include breakpoint-down(lg) {
+                width: calc(50% - 20px);
+            }
+        }
+
+        .item-content {
+            @apply relative text-center;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
+
+            @include breakpoint-down(md) {
+                border-radius: 5px;
+            }
+        }
+
+        .name-proyecto {
+            @apply text-white text-center font-semibold;
+            margin-top: 20px;
+            margin-bottom: 14px;
+        }
+
+        .category-proyecto {
+            @apply inline-block text-morado-dark font-semibold bg-amarillo;
+            font-family: var(--fuente-secundaria);
+            font-size: 13px;
+            padding: 8px 24px;
+            border-radius: 50px;
+
+            @include breakpoint-down(md) {
+                padding: 6px 14px;
+            }
+        }
+    }
+}
+
+/*=================
+    * TE GUSTA LO QUE VES *
+==================*/
+.cta-portafolio {
+    @apply relative;
+    padding-top: 50px;
+    padding-bottom: 140px;
+
+    .box {
+        @apply relative bg-morado-dark text-center;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
+    }
+
+    object {
+        @apply relative mx-auto;
+        top: -50px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        @apply text-white mx-auto;
+        max-width: 470px;
+        margin-bottom: 40px;
+    }
+
+    .rombo-1 {
+        width: 20px;
+        height: 20px;
+        top: 50px;
+        left: 250px;
+
+        @include breakpoint-down(xl) {
+            left: 180px;
+        }
+
+        @include breakpoint-down(lg) {
+            left: 80px;
+        }
+
+        @include breakpoint-down(sm) {
+            left: 46px;
+        }
+    }
+    .rombo-2 {
+        width: 30px;
+        height: 30px;
+        top: -30px;
+        right: 380px;
+
+        @include breakpoint-down(xl) {
+            right: 180px;
+        }
+
+        @include breakpoint-down(sm) {
+            top: -18px;
+            right: 60px;
+        }
+    }
+    .rombo-3 {
+        width: 40px;
+        height: 40px;
+        bottom: -70px;
+        left: 370px;
+
+        @include breakpoint-down(lg) {
+            left: 220px;
+        }
+
+        @include breakpoint-down(sm) {
+            left: 82px;
+        }
+        
+    }
+    .rombo-4 {
+        width: 20px;
+        height: 20px;
+        bottom: -50px;
+        right: 150px;
+
+        @include breakpoint-down(sm) {
+            right: 64px;
+        }
+    }
+}
