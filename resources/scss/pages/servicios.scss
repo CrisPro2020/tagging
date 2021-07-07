@@ -242,14 +242,10 @@
     padding-bottom: 130px;
 
     .line {
-        @apply inline-block bg-white mx-auto;
+        @apply block bg-white mx-auto;
         width: 2px;
         height: 130px;
         margin-bottom: 40px;
-
-        @include breakpoint-down(lg) {
-            @apply block;
-        }
     }
 
     .container {
