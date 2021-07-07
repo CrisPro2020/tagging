@@ -3808,6 +3808,8 @@ __webpack_require__(/*! ./cursor.js */ "./resources/js/cursor.js");
 
 __webpack_require__(/*! ./main.js */ "./resources/js/main.js");
 
+__webpack_require__(/*! ./muuri.js */ "./resources/js/muuri.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -3918,6 +3920,37 @@ function scrollTop() {
 }
 
 window.addEventListener("scroll", scrollTop);
+
+/***/ }),
+
+/***/ "./resources/js/muuri.js":
+/*!*******************************!*\
+  !*** ./resources/js/muuri.js ***!
+  \*******************************/
+/***/ (() => {
+
+// Iniciando Muuri
+var grid = new Muuri('.grid', {
+  layout: {
+    rounding: false
+  }
+});
+window.addEventListener('load', function () {
+  grid.refreshItems().layout();
+  document.getElementById('grid').classList.add('imagenes-cargadas');
+  var enlaces = document.querySelectorAll('.container .opc');
+  enlaces.forEach(function (elemento) {
+    elemento.addEventListener('click', function (evento) {
+      evento.preventDefault();
+      enlaces.forEach(function (enlace) {
+        return enlace.classList.remove('active');
+      });
+      evento.target.classList.add('active');
+      var categoria = evento.target.innerHTML.toLowerCase();
+      categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter("[data-categoria=\"".concat(categoria, "\"]"));
+    });
+  });
+});
 
 /***/ }),
 

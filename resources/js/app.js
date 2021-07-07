@@ -7,3 +7,5 @@ require('./swiper.js');
 require('./cursor.js');
 
 require('./main.js');
+
+require('./muuri.js');
