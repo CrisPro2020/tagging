@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Color de la barra de direcciones -->
+    <meta name="theme-color" content="#7B57FA">
+
     <title>@yield('title')</title>
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -21,7 +24,12 @@
     
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Muuri -->
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.4/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+
+
 </head>
 <body class="bg-morado">
 
@@ -45,7 +53,7 @@
                     <a href="{{ route('quienes-somos') }}" class="menu-link {{ request()->routeIs('quienes-somos') ? 'active' : '' }}">Quiénes somos</a>
                     <a href="{{ route('servicios') }}" class="menu-link {{ request()->routeIs('servicios') ? 'active' : '' }}">Servicios</a>
                     <a href="#" class="menu-link">Blog</a>
-                    <a href="#" class="menu-link">Portafolio</a>
+                    <a href="{{ route('portafolio') }}" class="menu-link {{ request()->routeIs('portafolio') ? 'active' : '' }}">Portafolio</a>
                     <a href="#" class="menu-link">Clientes</a>
                 </div>
                 <div class="relative contacto">
@@ -83,7 +91,7 @@
                     <a href="{{ route('quienes-somos') }}" class="menu-link {{ request()->routeIs('quienes-somos') ? 'active' : '' }}">Quiénes somos</a>
                     <a href="{{ route('servicios') }}" class="menu-link {{ request()->routeIs('servicios') ? 'active' : '' }}">Servicios</a>
                     <a href="#" class="menu-link">Blog</a>
-                    <a href="#" class="menu-link">Portafolio</a>
+                    <a href="{{ route('portafolio') }}" class="menu-link {{ request()->routeIs('portafolio') ? 'active' : '' }}">Portafolio</a>
                     <a href="#" class="menu-link">Clientes</a>
                 </div>
                 <div class="contacto">
@@ -115,7 +123,7 @@
                 <a href="{{ route('quienes-somos') }}" class="menu-link {{ request()->routeIs('quienes-somos') ? 'active' : '' }}">Quiénes somos</a>
                 <a href="{{ route('servicios') }}" class="menu-link {{ request()->routeIs('servicios') ? 'active' : '' }}">Servicios</a>
                 <a href="#" class="menu-link">Blog</a>
-                <a href="#" class="menu-link">Portafolio</a>
+                <a href="{{ route('portafolio') }}" class="menu-link {{ request()->routeIs('portafolio') ? 'active' : '' }}">Portafolio</a>
                 <a href="#" class="menu-link">Clientes</a>
             </div>
             <div class="contacto">
@@ -167,7 +175,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{ route('portafolio') }}">
                             <i class='bx bx-chevron-right'></i></span> Portafolio
                         </a>
                     </li>
